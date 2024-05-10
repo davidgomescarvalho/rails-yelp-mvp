@@ -11,5 +11,16 @@ puts "Cleaning database..."
 Restaurant.destroy_all
 
 puts "Creating restaurants..."
-dishoom = {name: "Dishoom", address: "7 Boundary St, London E2 7JE"}
-pizza_east = {name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ"}
+Restaurant.create!(
+  name: "C'est Bon C'est Belge",
+  address: "Rue du Bon-Secours, Brussel",
+  phone_number: "+321 23 45 67 89",
+  category: "belgian"
+)
+
+Restaurant.create!(
+  name: "Epicure",
+  address: "Faubourg Saint Honoré, Paris",
+  phone_number: "+331 23 45 67 89",
+  category: "french"
+)
